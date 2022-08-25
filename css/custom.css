@@ -1,0 +1,87 @@
+.bg_big {
+    top: 0px;
+    left: 0;
+    color: rgba(255, 255, 255, 0.1);
+    z-index: 0;
+    font-weight: 900;
+}
+
+.navbar-nav li>a span {
+    display: inline-block;
+    padding: 0px 8px;
+}
+
+.navbar-nav li>a span::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #FBC02D;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+
+.navbar-nav li>a:hover span::after {
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+
+.navbar-nav li>a .active span::after {
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+
+.navbar-nav>.nav-item .nav-link.active span::after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.img-home {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+}
+
+.abt_tag {
+    width: 95px;
+    display: inline-table;
+}
+
+#portfolio-flters .btn {
+    border: 2px solid;
+    font-weight: 600;
+}
+
+.footer .fa {
+    animation: heartbeat 1s infinite;
+    transition: all .2s ease-in-out;
+    color: red;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(.75);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(.75);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(.75);
+    }
+
+    100% {
+        transform: scale(.75);
+    }
+}
