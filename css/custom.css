@@ -37,6 +37,12 @@
     transform: scaleX(1);
 }
 
+@media (max-width: 991.98px) {
+  .navbar-toggler{
+	  outline:none;
+  }
+}
+
 .img-home {
     background-size: cover;
     background-repeat: no-repeat;
